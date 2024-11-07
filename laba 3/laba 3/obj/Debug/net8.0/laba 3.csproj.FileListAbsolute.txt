@@ -1,0 +1,28 @@
+C:\Users\Student\Desktop\laba 3\laba 3\bin\Debug\net8.0\laba 3.exe
+C:\Users\Student\Desktop\laba 3\laba 3\bin\Debug\net8.0\laba 3.deps.json
+C:\Users\Student\Desktop\laba 3\laba 3\bin\Debug\net8.0\laba 3.runtimeconfig.json
+C:\Users\Student\Desktop\laba 3\laba 3\bin\Debug\net8.0\laba 3.dll
+C:\Users\Student\Desktop\laba 3\laba 3\bin\Debug\net8.0\laba 3.pdb
+C:\Users\Student\Desktop\laba 3\laba 3\obj\Debug\net8.0\laba 3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Student\Desktop\laba 3\laba 3\obj\Debug\net8.0\laba 3.AssemblyInfoInputs.cache
+C:\Users\Student\Desktop\laba 3\laba 3\obj\Debug\net8.0\laba 3.AssemblyInfo.cs
+C:\Users\Student\Desktop\laba 3\laba 3\obj\Debug\net8.0\laba 3.csproj.CoreCompileInputs.cache
+C:\Users\Student\Desktop\laba 3\laba 3\obj\Debug\net8.0\laba 3.dll
+C:\Users\Student\Desktop\laba 3\laba 3\obj\Debug\net8.0\refint\laba 3.dll
+C:\Users\Student\Desktop\laba 3\laba 3\obj\Debug\net8.0\laba 3.pdb
+C:\Users\Student\Desktop\laba 3\laba 3\obj\Debug\net8.0\laba 3.genruntimeconfig.cache
+C:\Users\Student\Desktop\laba 3\laba 3\obj\Debug\net8.0\ref\laba 3.dll
+Y:\2024-2025 уч. год\Б24-171-1\ИТИП\Антропов Г. С\Лабораторные работы\laba 3\laba 3\bin\Debug\net8.0\laba 3.exe
+Y:\2024-2025 уч. год\Б24-171-1\ИТИП\Антропов Г. С\Лабораторные работы\laba 3\laba 3\bin\Debug\net8.0\laba 3.deps.json
+Y:\2024-2025 уч. год\Б24-171-1\ИТИП\Антропов Г. С\Лабораторные работы\laba 3\laba 3\bin\Debug\net8.0\laba 3.runtimeconfig.json
+Y:\2024-2025 уч. год\Б24-171-1\ИТИП\Антропов Г. С\Лабораторные работы\laba 3\laba 3\bin\Debug\net8.0\laba 3.dll
+Y:\2024-2025 уч. год\Б24-171-1\ИТИП\Антропов Г. С\Лабораторные работы\laba 3\laba 3\bin\Debug\net8.0\laba 3.pdb
+Y:\2024-2025 уч. год\Б24-171-1\ИТИП\Антропов Г. С\Лабораторные работы\laba 3\laba 3\obj\Debug\net8.0\laba 3.GeneratedMSBuildEditorConfig.editorconfig
+Y:\2024-2025 уч. год\Б24-171-1\ИТИП\Антропов Г. С\Лабораторные работы\laba 3\laba 3\obj\Debug\net8.0\laba 3.AssemblyInfoInputs.cache
+Y:\2024-2025 уч. год\Б24-171-1\ИТИП\Антропов Г. С\Лабораторные работы\laba 3\laba 3\obj\Debug\net8.0\laba 3.AssemblyInfo.cs
+Y:\2024-2025 уч. год\Б24-171-1\ИТИП\Антропов Г. С\Лабораторные работы\laba 3\laba 3\obj\Debug\net8.0\laba 3.csproj.CoreCompileInputs.cache
+Y:\2024-2025 уч. год\Б24-171-1\ИТИП\Антропов Г. С\Лабораторные работы\laba 3\laba 3\obj\Debug\net8.0\laba 3.dll
+Y:\2024-2025 уч. год\Б24-171-1\ИТИП\Антропов Г. С\Лабораторные работы\laba 3\laba 3\obj\Debug\net8.0\refint\laba 3.dll
+Y:\2024-2025 уч. год\Б24-171-1\ИТИП\Антропов Г. С\Лабораторные работы\laba 3\laba 3\obj\Debug\net8.0\laba 3.pdb
+Y:\2024-2025 уч. год\Б24-171-1\ИТИП\Антропов Г. С\Лабораторные работы\laba 3\laba 3\obj\Debug\net8.0\laba 3.genruntimeconfig.cache
+Y:\2024-2025 уч. год\Б24-171-1\ИТИП\Антропов Г. С\Лабораторные работы\laba 3\laba 3\obj\Debug\net8.0\ref\laba 3.dll

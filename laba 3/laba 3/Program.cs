@@ -52,6 +52,7 @@ while (true)
     Console.WriteLine("║0) Выход                            ║");
     Console.ForegroundColor = ConsoleColor.White;
     Console.WriteLine("╚════════════════════════════════════╝");
+    Console.WriteLine();
     Console.WriteLine("Введите номер задания:");
     int num_of_the_task = int.Parse(Console.ReadLine());
     switch (num_of_the_task)
@@ -116,18 +117,76 @@ while (true)
             
         case 2:
             {
+                Console.WriteLine("Введите желаемое количество строк в матрице:");
                 int line_amount = int.Parse(Console.ReadLine());
+
+                Console.WriteLine("Введите желаемое количество столбцов в матрице:");
                 int column_amount = int.Parse(Console.ReadLine());
-                int[] mtrx = new int[line_amount];
+
+                int[,] mtrx = new int[line_amount, column_amount];
+
+
                 for (int i = 0; i < line_amount; i++)
                 {
-                    int[] line = new int[column_amount];
                     for (int j = 0; j < column_amount; j++)
                     {
-                         mtrx[i] = rnd.Next(-5, 5);
+                         mtrx[i, j] = rnd.Next(-10, 10);
                     }
                 }
-            }break;
+                
+                Console.WriteLine();
+                Console.WriteLine();
+                Console.WriteLine("Ваша матрица:");
+
+                for (int i = 0; i < line_amount; i++)
+                {
+                    Console.WriteLine();
+                    for (int j = 0; j < column_amount; j++)
+                    {
+                        Console.Write(mtrx[i, j] + "\t");
+                    }
+                }
+                int count = line_amount;
+                for (int i = 0; i < line_amount; i++)
+                {
+                    for (int j = 0;j < column_amount; j++)
+                    {
+                        if (mtrx[i, j] == 0)
+                        {
+                            count--;
+                            break;
+                        }
+                    }
+                }
+                Console.WriteLine();
+                Console.WriteLine();
+                Console.WriteLine("Количество строк, не содержащих ни одного нулевого элемента:");
+                Console.WriteLine(count);
+                Console.WriteLine();
+
+
+                int[] mtrx_in_line = mtrx.Cast<int>().ToArray();
+                int biggst = int.MinValue;
+                for (int i = 0;i < mtrx_in_line.Length; i++)
+                {
+                    int temp = mtrx_in_line[i];
+                    bool flag = false;
+                    for (int j = i+1; j < mtrx_in_line.Length; j++)
+                    {
+                        if (mtrx_in_line[i] == mtrx_in_line[j])
+                        {
+                            flag = true;
+                            break;
+                        }
+                    }
+                    if (flag)
+                        if (mtrx_in_line[i] > biggst)
+                            biggst = mtrx_in_line[i];
+                }
+                Console.WriteLine("Максимальное из чисел, встречающихся в заданной мат-рице более одного раза:");
+                Console.WriteLine(biggst);
+            }
+            break;
 
         case 3:
             {

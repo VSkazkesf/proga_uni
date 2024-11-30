@@ -1,4 +1,4 @@
-﻿Random rnd = new Random();
+Random rnd = new Random();
 
 static List<double> QuickSort(List<double> array)
 {
@@ -32,6 +32,9 @@ static List<double> QuickSort(List<double> array)
 
 while (true)
 {
+    Console.WriteLine();
+    Console.WriteLine();
+    Console.WriteLine();
     Console.ForegroundColor = ConsoleColor.Red;
     Console.WriteLine("╔════════════════════════════════════╗");
     Console.ForegroundColor = ConsoleColor.Cyan;
@@ -55,66 +58,70 @@ while (true)
     Console.WriteLine();
     Console.WriteLine("Введите номер задания:");
     int num_of_the_task = int.Parse(Console.ReadLine());
+    Console.WriteLine();
     switch (num_of_the_task)
     {
         case 1:
+        {
+            Console.WriteLine("Введите желаемую длину списка:");
+            int n = int.Parse(Console.ReadLine());
+            double[] array = new double[n];
+            for (int i = 0; i < n; i++)
             {
-                Console.WriteLine("Введите желаемую длину списка:");
-                int n = int.Parse(Console.ReadLine());
-                double[] array = new double[n];
-                for (int i = 0; i < n; i++)
-                {
-                    int t1 = rnd.Next(-100, 100);
-                    double t2 = rnd.NextDouble() * t1;
-                    array[i] = Math.Round(t2, 4);
-                }
-                Console.WriteLine("Исходный список");
-                Console.WriteLine(string.Join(" ", array));
-                Console.WriteLine();
-                Console.WriteLine();
+                int t1 = rnd.Next(-100, 100);
+                double t2 = rnd.NextDouble() * t1;
+                array[i] = Math.Round(t2, 4);
+            }
 
-                var min_value = array.Max();
-                var max_value = array.Min();
-                var left_ind = Array.IndexOf(array, min_value);
-                var right_ind = Array.IndexOf(array, max_value);
-                if (left_ind > right_ind)
-                {
-                    var temp = left_ind;
-                    left_ind = right_ind;
-                    right_ind = temp;
-                }
-                var sum_of_the_negative_num = 0.0;
-                var product_between_min_max = 1.0;
-                foreach (double i in array)
-                {
-                    if (i < 0)
-                    {
-                        sum_of_the_negative_num += i;
-                    }
+            Console.WriteLine();
+            Console.WriteLine("Исходный список");
+            Console.WriteLine(string.Join(" ", array));
+            Console.WriteLine();
 
-                    int digit_index = Array.IndexOf(array, i);
-                    if (left_ind < digit_index)
+            var min_value = array.Max();
+            var max_value = array.Min();
+            var left_ind = Array.IndexOf(array, min_value);
+            var right_ind = Array.IndexOf(array, max_value);
+            if (left_ind > right_ind)
+            {
+                var temp = left_ind;
+                left_ind = right_ind;
+                right_ind = temp;
+            }
+
+            var sum_of_the_negative_num = 0.0;
+            var product_between_min_max = 1.0;
+            foreach (double i in array)
+            {
+                if (i < 0)
+                {
+                    sum_of_the_negative_num += i;
+                }
+
+                int digit_index = Array.IndexOf(array, i);
+                if (left_ind < digit_index)
+                {
+                    if (digit_index < right_ind)
                     {
-                        if (digit_index < right_ind)
-                        {
-                            product_between_min_max *= array[digit_index];
-                        }
+                        product_between_min_max *= array[digit_index];
                     }
                 }
+            }
 
-                List<double> unsorted_numbers = array.ToList();
-                List<double> sortednumbers = QuickSort(unsorted_numbers);
+            List<double> unsorted_numbers = array.ToList();
+            List<double> sortednumbers = QuickSort(unsorted_numbers);
 
-                Console.WriteLine("Отсортированный по возрастанию список:");
-                Console.WriteLine(string.Join(" ", sortednumbers));
-                Console.WriteLine();
-                Console.WriteLine("Сумма отрицательных элементов:");
-                Console.WriteLine(Math.Round(sum_of_the_negative_num, 4));
-                Console.WriteLine();
-                Console.WriteLine("Произведение элементов между минимальным и максимальным:");
-                Console.WriteLine(Math.Round(product_between_min_max, 4));
-            }break;
-            
+            Console.WriteLine("Отсортированный по возрастанию список:");
+            Console.WriteLine(string.Join(" ", sortednumbers));
+            Console.WriteLine();
+            Console.WriteLine("Сумма отрицательных элементов:");
+            Console.WriteLine(Math.Round(sum_of_the_negative_num, 4));
+            Console.WriteLine();
+            Console.WriteLine("Произведение элементов между минимальным и максимальным:");
+            Console.WriteLine(Math.Round(product_between_min_max, 4));
+        }
+            continue;
+
         case 2:
             {
                 Console.WriteLine("Введите желаемое количество строк в матрице:");
@@ -130,7 +137,7 @@ while (true)
                 {
                     for (int j = 0; j < column_amount; j++)
                     {
-                         mtrx[i, j] = rnd.Next(-10, 10);
+                         mtrx[i, j] = rnd.Next(-7, 7);
                     }
                 }
                 
@@ -186,13 +193,49 @@ while (true)
                 Console.WriteLine("Максимальное из чисел, встречающихся в заданной мат-рице более одного раза:");
                 Console.WriteLine(biggst);
             }
-            break;
+            continue;
 
         case 3:
             {
+                Console.Write("Введите предложение:");
+                var sentense = Console.ReadLine();
 
+                string[] words = sentense.Split(' ');
+                string[] wordsPair = new string[2];
+                var maxPairDistance = 0;
+
+                for (int i = 0; i < words.Length - 1; i++)
+                {
+                    for (int j = i + 1; j < words.Length; j++)
+                    {
+                        var pairDistance = 0;
+        
+                        if (words[i].Length != words[j].Length)
+                        {
+                            continue;
+                        }
+
+                        for (int k = 0; k < words[i].Length; k++)
+                        {
+                            if (words[i][k] != words[j][k])
+                            {
+                                pairDistance++;
+                            }
+                        }
+
+                        if (pairDistance > maxPairDistance)
+                        {
+                            maxPairDistance = pairDistance;
+                            wordsPair[0] = words[i];
+                            wordsPair[1] = words[j];
+                        }
+                    }
+                }
+                Console.WriteLine();
+                Console.WriteLine($"Пара слов с максимальным расстоянием: {string.Join(' ', wordsPair)}");
+                Console.WriteLine($"Максимальное расстояние между словами: {maxPairDistance}");
             }
-            break;
+            continue;
 
         case 0:
             {
@@ -202,7 +245,7 @@ while (true)
         default:
             {
                 Console.WriteLine("Такое действие не предусмотрено программой, попробуйте ввести другое значение");
-            }break;
+            }continue;
 
     }
     break;

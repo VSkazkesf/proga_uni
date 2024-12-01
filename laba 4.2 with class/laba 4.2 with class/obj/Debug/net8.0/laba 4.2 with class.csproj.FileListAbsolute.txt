@@ -1,0 +1,14 @@
+C:\Users\egora\RiderProjects\laba 4.2 with class\laba 4.2 with class\bin\Debug\net8.0\laba 4.2 with class.exe
+C:\Users\egora\RiderProjects\laba 4.2 with class\laba 4.2 with class\bin\Debug\net8.0\laba 4.2 with class.deps.json
+C:\Users\egora\RiderProjects\laba 4.2 with class\laba 4.2 with class\bin\Debug\net8.0\laba 4.2 with class.runtimeconfig.json
+C:\Users\egora\RiderProjects\laba 4.2 with class\laba 4.2 with class\bin\Debug\net8.0\laba 4.2 with class.dll
+C:\Users\egora\RiderProjects\laba 4.2 with class\laba 4.2 with class\bin\Debug\net8.0\laba 4.2 with class.pdb
+C:\Users\egora\RiderProjects\laba 4.2 with class\laba 4.2 with class\obj\Debug\net8.0\laba 4.2 with class.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\egora\RiderProjects\laba 4.2 with class\laba 4.2 with class\obj\Debug\net8.0\laba 4.2 with class.AssemblyInfoInputs.cache
+C:\Users\egora\RiderProjects\laba 4.2 with class\laba 4.2 with class\obj\Debug\net8.0\laba 4.2 with class.AssemblyInfo.cs
+C:\Users\egora\RiderProjects\laba 4.2 with class\laba 4.2 with class\obj\Debug\net8.0\laba 4.2 with class.csproj.CoreCompileInputs.cache
+C:\Users\egora\RiderProjects\laba 4.2 with class\laba 4.2 with class\obj\Debug\net8.0\laba 4.2 with class.dll
+C:\Users\egora\RiderProjects\laba 4.2 with class\laba 4.2 with class\obj\Debug\net8.0\refint\laba 4.2 with class.dll
+C:\Users\egora\RiderProjects\laba 4.2 with class\laba 4.2 with class\obj\Debug\net8.0\laba 4.2 with class.pdb
+C:\Users\egora\RiderProjects\laba 4.2 with class\laba 4.2 with class\obj\Debug\net8.0\laba 4.2 with class.genruntimeconfig.cache
+C:\Users\egora\RiderProjects\laba 4.2 with class\laba 4.2 with class\obj\Debug\net8.0\ref\laba 4.2 with class.dll

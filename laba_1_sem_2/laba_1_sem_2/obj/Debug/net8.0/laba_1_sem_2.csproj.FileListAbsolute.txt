@@ -1,0 +1,14 @@
+C:\Users\egora\RiderProjects\laba_1_sem_2\laba_1_sem_2\bin\Debug\net8.0\laba_1_sem_2.exe
+C:\Users\egora\RiderProjects\laba_1_sem_2\laba_1_sem_2\bin\Debug\net8.0\laba_1_sem_2.deps.json
+C:\Users\egora\RiderProjects\laba_1_sem_2\laba_1_sem_2\bin\Debug\net8.0\laba_1_sem_2.runtimeconfig.json
+C:\Users\egora\RiderProjects\laba_1_sem_2\laba_1_sem_2\bin\Debug\net8.0\laba_1_sem_2.dll
+C:\Users\egora\RiderProjects\laba_1_sem_2\laba_1_sem_2\bin\Debug\net8.0\laba_1_sem_2.pdb
+C:\Users\egora\RiderProjects\laba_1_sem_2\laba_1_sem_2\obj\Debug\net8.0\laba_1_sem_2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\egora\RiderProjects\laba_1_sem_2\laba_1_sem_2\obj\Debug\net8.0\laba_1_sem_2.AssemblyInfoInputs.cache
+C:\Users\egora\RiderProjects\laba_1_sem_2\laba_1_sem_2\obj\Debug\net8.0\laba_1_sem_2.AssemblyInfo.cs
+C:\Users\egora\RiderProjects\laba_1_sem_2\laba_1_sem_2\obj\Debug\net8.0\laba_1_sem_2.csproj.CoreCompileInputs.cache
+C:\Users\egora\RiderProjects\laba_1_sem_2\laba_1_sem_2\obj\Debug\net8.0\laba_1_sem_2.dll
+C:\Users\egora\RiderProjects\laba_1_sem_2\laba_1_sem_2\obj\Debug\net8.0\refint\laba_1_sem_2.dll
+C:\Users\egora\RiderProjects\laba_1_sem_2\laba_1_sem_2\obj\Debug\net8.0\laba_1_sem_2.pdb
+C:\Users\egora\RiderProjects\laba_1_sem_2\laba_1_sem_2\obj\Debug\net8.0\laba_1_sem_2.genruntimeconfig.cache
+C:\Users\egora\RiderProjects\laba_1_sem_2\laba_1_sem_2\obj\Debug\net8.0\ref\laba_1_sem_2.dll

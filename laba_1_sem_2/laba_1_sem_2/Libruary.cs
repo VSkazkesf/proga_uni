@@ -1,20 +1,82 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace laba_1_sem_2
 {
     public class Library
     {
-        List<Book> Books { get; }
-        List<Member> Members { get; }
+        public List<Book> Books { get; }
+        public List<Member> Members { get; }
 
         public Library()
         {
             Books = new List<Book>();
             Members = new List<Member>();
+        }
+
+        public void AddBook(Book book)
+        {
+            Books.Add(book);
+        }
+
+        public void RegisterMember(Member member)
+        {
+            Members.Add(member);
+        }
+
+        public void LoanBook(Book book, Member member)
+        {
+            book.IsAvailable = false;
+            member.LoanedBooks.Add(book);
+        }
+
+        public void ReturnBook(Book book)
+        {
+            book.IsAvailable = true;
+        }
+
+        public List<Book> GetLoans()
+        {
+            List<Book> loans = Books.Where(x => !x.IsAvailable).ToList();
+            return loans;
+        }
+
+        public Book SearchBookTitle(string title)
+        {
+            var foundBook = Books.FirstOrDefault(x => x.Title == title);
+            if (foundBook != null)
+            {
+                return foundBook;
+            }
+            else
+            {
+                throw new KeyNotFoundException();
+            }
+        }
+
+        public List<Book> GetAvailableBooks()
+        {
+            List<Book> avavailableBooks = Books.Where(x => x.IsAvailable).ToList();
+            return avavailableBooks;
+        }
+
+        public void RemoveBook(Book book)
+        {
+            Books.Remove(book);
+        }
+
+        public List<Member> GetMembers()
+        {
+            return Members;
+        }
+
+        public void ShowMeYourBook(Book book)
+        {
+            Console.WriteLine(book.Title);
+            Console.WriteLine(book.Author);
+            Console.WriteLine(book.Isbn);
+            Console.WriteLine(book.IsAvailable.ToString());
         }
     }
 }

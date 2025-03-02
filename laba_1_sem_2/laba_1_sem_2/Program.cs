@@ -73,7 +73,9 @@ class Program
                 
                 case 4:
                 {
-                    
+                    var isbn = Guid.Parse(Console.ReadLine());
+                    var book = lb.Books.FirstOrDefault(x => x.Isbn == isbn);
+                    lb.ReturnBook(book);
                 }continue;
                 
                 case 5:

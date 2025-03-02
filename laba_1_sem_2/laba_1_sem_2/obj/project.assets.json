@@ -8,26 +8,24 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\student\\.nuget\\packages\\": {}
+    "C:\\Users\\egora\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\student\\source\\repos\\laba_1_sem_2\\laba_1_sem_2\\laba_1_sem_2.csproj",
+      "projectUniqueName": "C:\\Users\\egora\\Documents\\GitHub\\proga_uni\\laba_1_sem_2\\laba_1_sem_2\\laba_1_sem_2.csproj",
       "projectName": "laba_1_sem_2",
-      "projectPath": "C:\\Users\\student\\source\\repos\\laba_1_sem_2\\laba_1_sem_2\\laba_1_sem_2.csproj",
-      "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\student\\source\\repos\\laba_1_sem_2\\laba_1_sem_2\\obj\\",
+      "projectPath": "C:\\Users\\egora\\Documents\\GitHub\\proga_uni\\laba_1_sem_2\\laba_1_sem_2\\laba_1_sem_2.csproj",
+      "packagesPath": "C:\\Users\\egora\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\egora\\Documents\\GitHub\\proga_uni\\laba_1_sem_2\\laba_1_sem_2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\student\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\egora\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -66,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -14,5 +14,13 @@
             Isbn = Guid.NewGuid();
             IsAvailable = true;
         }
+
+        public void ShowMeYourBook()
+        {
+            Console.WriteLine($"Title: {Title}");
+            Console.WriteLine($"Author: {Author}");
+            Console.WriteLine($"Isbn: {Isbn}");
+            Console.WriteLine($"IsAvailable: {IsAvailable}");
+        }
     }
 }

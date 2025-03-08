@@ -13,5 +13,11 @@
             MemberId = Guid.NewGuid();
             LoanedBooks = new List<Book>();
         }
+
+        public void ShowMeYourMember()
+        {
+            Console.WriteLine($"Name: {Name}");
+            Console.WriteLine($"MemberId: {MemberId}");
+        }
     }
 }

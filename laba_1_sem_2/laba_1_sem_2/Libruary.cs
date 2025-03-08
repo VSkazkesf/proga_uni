@@ -42,7 +42,7 @@ namespace laba_1_sem_2
             return loans;
         }
 
-        public Book SearchBookTitle(string title)
+        public Book SearchBook(string title)
         {
             var foundBook = Books.FirstOrDefault(x => x.Title == title);
             if (foundBook != null)
@@ -69,14 +69,6 @@ namespace laba_1_sem_2
         public List<Member> GetMembers()
         {
             return Members;
-        }
-
-        public void ShowMeYourBook(Book book)
-        {
-            Console.WriteLine(book.Title);
-            Console.WriteLine(book.Author);
-            Console.WriteLine(book.Isbn);
-            Console.WriteLine(book.IsAvailable.ToString());
         }
     }
 }

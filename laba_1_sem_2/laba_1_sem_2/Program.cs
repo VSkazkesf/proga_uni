@@ -21,11 +21,34 @@ class Program
             Console.WriteLine("8. Remove a book");
             Console.WriteLine("9. Find out all the library members");
             Console.WriteLine("10. Get book details");
-            Console.WriteLine("11. Exit");
+            Console.WriteLine("0. Exit");
         }
-        
+
+        static bool ContinueOrNot()
+        {
+            Console.WriteLine("Do you want to continue? (y/n)");
+            while (true)
+            {
+                var answer = Console.ReadLine();
+                switch (answer)
+                {
+                    case "y":
+                    {
+                        return true;
+                    }
+                    case "n":
+                    {
+                        return false;
+                    }
+                    default:
+                    {
+                        Console.WriteLine("please enter a letter 'y' or 'n'");
+                    } continue;
+                }
+            }
+        }
+
         Console.Clear();
-        Console.WriteLine("What do you want to do?");
         while (true)
         {
             int choice;
@@ -44,6 +67,7 @@ class Program
                     Console.WriteLine();
                     continue;
                 }
+                Console.Clear();
                 break;
             }
 
@@ -51,72 +75,187 @@ class Program
             {
                 case 1:
                 {
+                    Console.Write("Enter a member name: ");
                     var name = Console.ReadLine();
                     lb.RegisterMember(new Member(name));
-                }continue;
+                    // Console.Clear();
+                    Console.WriteLine("Member added");
+                    Console.WriteLine();
+                    
+                    if (ContinueOrNot())
+                    {
+                        Console.Clear();
+                        continue;
+                    }
+                    return;
+                }
                 
                 case 2:
                 {
+                    Console.Write("Enter a book title: ");
                     var title = Console.ReadLine();
+                    Console.Write("Enter a book author: ");
                     var author = Console.ReadLine();
                     lb.AddBook(new Book(title, author));
-                }continue;
+                    Console.WriteLine("Book added");
+                    Console.WriteLine();
+                    
+                    if (ContinueOrNot())
+                    {
+                        Console.Clear(); 
+                        continue;
+                    }
+                    return;
+                }
                 
                 case 3:
+                        
                 {
+                    Console.Write("Enter a book isbn: ");
                     var isbn = Guid.Parse(Console.ReadLine());
+                    Console.Write("Enter a member ID: ");
                     var memberId = Guid.Parse(Console.ReadLine());
                     var book = lb.Books.FirstOrDefault(x => x.Isbn == isbn);
                     var member = lb.Members.FirstOrDefault(x => x.MemberId == memberId);
                     lb.LoanBook(book, member);
-                }continue;
+                    Console.WriteLine("Book loaned");
+                    Console.WriteLine();
+                    
+                    if (ContinueOrNot())
+                    {
+                        Console.Clear(); 
+                        continue;
+                    }
+                    return;
+                }
                 
                 case 4:
                 {
+                    Console.Write("Enter a book isbn: ");
                     var isbn = Guid.Parse(Console.ReadLine());
                     var book = lb.Books.FirstOrDefault(x => x.Isbn == isbn);
                     lb.ReturnBook(book);
-                }continue;
+                    Console.WriteLine("Book returned");
+                    Console.WriteLine();
+                    
+                    if (ContinueOrNot())
+                    {
+                        Console.Clear(); 
+                        continue;
+                    }
+                    return;
+                }
                 
                 case 5:
                 {
-                    
-                }continue;
+                    var loans = lb.GetLoans();
+                    Console.WriteLine("Here is loaned books:");
+                    Console.WriteLine();
+                    foreach (var book in loans)
+                    {
+                        book.ShowMeYourBook();
+                        Console.WriteLine();
+                    }
+
+                    if (ContinueOrNot())
+                    {
+                        Console.Clear();
+                        continue;
+                    }
+                    return;
+                }
                 
                 case 6:
                 {
+                    Console.Write("Enter a book title: ");
+                    var title = Console.ReadLine();
+                    var book = lb.SearchBook(title);
+                    book.ShowMeYourBook();
                     
-                }continue;
+                    if (ContinueOrNot())
+                    {
+                        Console.Clear();
+                        continue;
+                    }
+                    return;
+                }
                 
                 case 7:
                 {
+                    var availableBooks = lb.GetAvailableBooks();
+                    Console.WriteLine("Available books:");
+                    Console.WriteLine();
+                    foreach (var book in availableBooks)
+                    {
+                        book.ShowMeYourBook();
+                        Console.WriteLine();
+                    }
                     
-                }continue;
+                    if (ContinueOrNot())
+                    {
+                        Console.Clear();
+                        continue;
+                    }
+                    return;
+                }
                 
                 case 8:
                 {
+                    Console.Write("Enter a book title: ");
+                    var title = Console.ReadLine();
+                    var book = lb.SearchBook(title);
+                    lb.RemoveBook(book);
+                    Console.Clear();
+                    Console.WriteLine("Book removed");
+                    Console.WriteLine();
                     
-                }continue;
+                    if (ContinueOrNot())
+                    {
+                        Console.Clear(); 
+                        continue;
+                    }
+                    return;
+                }
                 
                 case 9:
                 {
+                    var members = lb.GetMembers();
+                    Console.WriteLine("Members:");
+                    Console.WriteLine();
+                    foreach (var member in members)
+                    {
+                        member.ShowMeYourMember();
+                        Console.WriteLine();
+                    }
                     
-                }continue;
+                    if (ContinueOrNot())
+                    {
+                        Console.Clear();
+                        continue;
+                    }
+                    return;
+                }
                 
                 case 10:
                 {
+                    Console.Write("Enter a book title: ");
+                    var title = Console.ReadLine();
+                    var book = lb.SearchBook(title);
+                    book.ShowMeYourBook();
                     
-                }continue;
+                    if (ContinueOrNot())
+                    {
+                        Console.Clear(); 
+                        continue;
+                    }
+                    return;
+                }
                 
-                case 11:
+                case 0:
                 {
-                    break;
+                    return;
                 }
             }
         }
-        
-        //TODO Console with Console.Clear();
-        
-        
     }
 }

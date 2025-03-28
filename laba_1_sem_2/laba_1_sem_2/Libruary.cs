@@ -6,29 +6,31 @@ namespace laba_1_sem_2
 {
     public class Library
     {
-        public List<Book> Books { get; }
-        public List<Member> Members { get; }
+        public IReadOnlyList<Book> Books => books.AsReadOnly();
+        private List<Book> books;
+        public IReadOnlyList<Member> Members => members.AsReadOnly();
+        private List<Member> members;
 
         public Library()
         {
-            Books = new List<Book>();
-            Members = new List<Member>();
+            books = new List<Book>();
+            members = new List<Member>();
         }
 
         public void AddBook(Book book)
         {
-            Books.Add(book);
+            books.Add(book);
         }
 
         public void RegisterMember(Member member)
         {
-            Members.Add(member);
+            members.Add(member);
         }
 
         public void LoanBook(Book book, Member member)
         {
             book.IsAvailable = false;
-            member.LoanedBooks.Add(book);
+            member.BookToLoans(book);
         }
 
         public void ReturnBook(Book book)
@@ -63,12 +65,12 @@ namespace laba_1_sem_2
 
         public void RemoveBook(Book book)
         {
-            Books.Remove(book);
+            books.Remove(book);
         }
 
         public List<Member> GetMembers()
         {
-            return Members;
+            return members;
         }
     }
 }
